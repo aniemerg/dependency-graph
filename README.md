@@ -1,8 +1,20 @@
 # Deep Funding - Dependency Graph
 
-Data and docs for Deep Funding's dependency graph.
+This repository serves as the primary home for [Deep Funding](https://www.deepfunding.org/), representing the project as a whole through its core infrastructure, data, and methodology. Deep Funding is an experimental mechanism for allocating public goods funding across Ethereum's open source ecosystem. Created by [Vitalik Buterin](https://x.com/VitalikButerin/status/1867886974058520820) and developed in collaboration with Gitcoin, Allo Capital, Open Source Observer, and leading Ethereum researchers, Deep Funding traces value through dependency graphs to reward not just high-visibility projects, but the foundational libraries, tools, and infrastructure that make the ecosystem possible.
 
->🚨 **Updates** 🚨<br>- 2025-01-20:  We've updated the graph to include more seed nodes (and edges). You can still view the V1 graph data [here](./graph/v1/).
+## What is Deep Funding?
+
+Deep Funding addresses a fundamental challenge in public goods funding: how to fairly compensate the complex web of dependencies that underlies any successful open source ecosystem. Instead of voting directly on projects, Deep Funding builds a weighted dependency graph showing how Ethereum projects rely on each other, then uses a combination of expert jury evaluation, machine learning models, and prediction markets to determine how funding should flow through that graph.
+
+The mechanism works in three phases. First, we map Ethereum's dependency structure—starting from core infrastructure like consensus clients, execution clients, and development tools, then tracing their dependencies through package managers and GitHub. Second, a jury of high-context individuals (including Vitalik Buterin, core client developers, and ecosystem leaders) provides comparative judgments on a subset of dependencies. Third, AI models and prediction markets extrapolate those judgments across the entire graph of thousands of projects. The result is a system where you can send funding to a single address for "supporting Ethereum," and have it intelligently routed to everyone who contributes—including the maintainer of an obscure but critical library that hundreds of projects depend on.
+
+## Current Status & Results
+
+The first Deep Funding trial completed in 2025 with [45 expert jurors](https://research.allo.capital/t/join-the-deep-funding-jury/99) (including Vitalik, Mark Tyneway from Optimism, Toni Wahrstatter and Alex Stokes from the Ethereum Foundation, and core developers from major clients) providing 650+ comparative evaluations between 45 repositories from Protocol Guild, Argot Collective, and the Dev Tooling Guild. Over 12,000 participants competed in the [model-building competition](https://cryptopond.xyz/modelfactory/detail/2564617), with $30,000 in prizes awarded across provisional leaderboard rankings, composite model contributions, and research writeups.
+
+Deep Funding is actively evolving. We are adding a jury improvement track focused on better data collection methods, juror UI enhancements with LLM summaries, and quality control mechanisms. The mechanism is integrated with prediction markets via Seer (deep.seer.pm), allowing anyone to stake on repository valuations. Deep Funding is participating in [Gitcoin Grants Round 24](https://gitcoin.notion.site/GG24-Developer-Tooling-and-Infrastructure-Deep-Funding-Round-286f3309710d806bb97dfe25778f2afe) with $350,000 in funding to be allocated using this methodology, with the graph expanding to include 45-60 additional repositories and their dependencies.
+
+This repository serves as the source of truth for Ethereum's dependency graph structure, a dataset for researchers exploring funding mechanism design, and the project record for ongoing Deep Funding development and future funding rounds.
 
 ## Overview
 
